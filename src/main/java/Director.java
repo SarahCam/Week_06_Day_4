@@ -10,4 +10,11 @@ public class Director extends Manager {
     public Double getBudget() {
         return budget;
     }
+
+    // Return a bonus that is 2% of the employees's current salary:
+    @Override
+    public Double payBonus(){
+        Double salary = getSalary();
+        return salary / 50;
+    }
 }
