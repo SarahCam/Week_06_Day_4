@@ -23,7 +23,9 @@ public abstract class Employee {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (!name.isEmpty()) {
+            this.name = name;
+        }
     }
 
     // Increase the employee's salary by 'amount':

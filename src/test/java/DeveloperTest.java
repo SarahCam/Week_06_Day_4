@@ -51,10 +51,10 @@ public class DeveloperTest {
         assertEquals("Ernest", developer.getName());
     }
 
-//    @Test
-//    public void canSetName___WONT_ACCEPT_NULL_VALUE(){
-//        developer.setName();
-//        assertEquals("Mike", developer.getName());
-//    }
+    @Test
+    public void canSetName___WONT_ACCEPT_NULL_VALUE(){
+        developer.setName("");
+        assertEquals("Mike", developer.getName());
+    }
 
 }
